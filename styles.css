@@ -1,0 +1,190 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+  color: #444;
+  animation: gradientMove 10s infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+header {
+  margin-top: 50px;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+header p {
+  font-size: 1.7rem;
+  color: #fefefe;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.message {
+  margin: 30px auto;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+  line-height: 1.8;
+  animation: slideUp 1.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.features button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #ff6f61;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.features button:hover {
+  background-color: #ff4e3a;
+  transform: scale(1.1);
+}
+
+.features img {
+  margin-top: 25px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.features .quote {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+  font-style: italic;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+.countdown {
+  margin-top: 40px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.countdown h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.cake button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cake button:hover {
+  background-color: #e91e63;
+  transform: scale(1.1);
+}
+
+#cakeImage {
+  max-width: 80%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.video button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video button:hover {
+  background-color: #388e3c;
+  transform: scale(1.1);
+}
+
+#videoSection {
+  text-align: center; /* Agar video berada di tengah */
+  margin-top: 20px;
+}
+
+#videoSection video {
+  width: 100%; /* Menggunakan lebar penuh kontainer */
+  max-width: 300px; /* Batas maksimal ukuran video */
+  height: auto; /* Menjaga proporsi video */
+  margin-top: 20px;
+  border-radius: 10px; /* Membuat sudut video melengkung */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan */
+  transition: transform 0.3s ease; /* Efek zoom saat video disentuh */
+}
+
+#videoSection video:hover {
+  transform: scale(1.05); /* Memberikan efek zoom kecil saat hover */
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Happy 5th Anniversary!</h1>
+            <p>Sebagai Ucapan Terima Kasih</p>
+        </header>
+        <main>
+            <section class="message">
+                <h2></h2>
+                <p>"Ngga Kerasa udah lima tahun lagi wkwk. Makasi banyak ya sayang udah bertahan sampai sekarang dan abang harap selamanya. Abang bersyukur punya ayang orang spesial yang mau sayang sma abang, baik,cantik,pinter,sholeh. Jangan ada kata bosen dan nyerah di antara kita ya sayang mau gimana pun nanti masalah/rintangan kedepannya jangan sampai nyerah pokoknya mah wkwk sama makin di kuatin lagi hati nya. Dan maafin abang ya masih banya kurang dalam hal segi apapun. Doa Terbaik Buat kita ya Love You Cantik❤️"</p>
+            </section>
+            <section class="features">
+                <button id="playMusic">Play Music</button>
+                <div class="quote">
+                    <blockquote>"I love you not only for what you are, but for what I am when I am with you❤️"</blockquote>
+                </div>
+            </section>
+            <section class="video">
+                <button id="showVideo">Show Video 🎥</button>
+                <div id="videoSection" style="display: none;">
+                    <video id="anniversaryVideo" width="80%" controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+            
+            <section class="memories">
+                <h2>Photo Memories</h2>
+                <div class="gallery">
+                    <img src="IMG-20250102-WA0003.jpg" alt="Memory 1">
+                    <img src="IMG-20250102-WA0004.jpg" alt="Memory 2">
+                    <img src="IMG-20250102-WA0002.jpg" alt="Memory 3">
+                    <img src="ngab.jpg" alt="Memory 5">
+                    <img src="IMG-20250102-WA0001.jpg" alt="Memory 4">
+                    <img src="IMG-20250102-WA0005.jpg" alt="Memory 5">
+                    <img src="bala.jpg" alt="Memory 5">
+                </div>
+            </section>
+            <section class="countdown">
+                <h2>OTW 6 Tahun Cantik ❤️</h2>
+                <div id="countdownTimer"></div>
+            </section>
+            <section class="cake">
+                <button id="Tiup Dulu">Tiup Dulu 🎂</button>
+                <img id="cakeImage" src="p.png" alt="Anniversary Cake" style="display: none; opacity: 0; transition: opacity 1s;">
+            </section>
+        </main>
+        <footer>
+            <p>With love, always and forever ❤️</p>
+        </footer>
+    </div>
+    <audio id="backgroundMusic" src="sound.mp3" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
